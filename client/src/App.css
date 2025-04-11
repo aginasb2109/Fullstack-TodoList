@@ -1,5 +1,55 @@
 body{
   margin:0px;
   padding:0px;
+  background-color: rgb(240, 205, 240);
 }
+
+
+.inputTodo{
+  width:500px;
+  
+}
+.formTodo{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+.inputarea{
+  border-radius: 10px;
+  border:1px solid rgb(41, 3, 25);
+}
+
+.ListTodo .tableList {
+  background-color: crimson !important;
+  color: rgb(236, 194, 231);
+  border: 5px solid rgb(141, 102, 123); 
+}
+
+.ListTodo .tableList tbody tr td {
+  background-color: rgb(224, 209, 223) !important;
+  color: rgb(58, 3, 35) !important;
+  font-weight: bold;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  border:1px solid rgb(231, 84, 175);
+}
+.ListTodo .tableList thead th{
+  border:1px solid rgb(228, 77, 170);
+  background-color: rgb(225, 160, 231);
+  font-size: larger;
+  font-family:'Times New Roman', Times, serif;
+  font-size:30px;
+}
+
+.ListTodo .tableList tbody {
+  border-radius: 20px;
+}
+.ListTodo .tableList{
+   box-shadow: 0px 4px 10px 0px purple;
+}
+
+
+
+
+
+
 

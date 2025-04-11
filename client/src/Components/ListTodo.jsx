@@ -1,5 +1,6 @@
 import React, { Fragment,useEffect, useState } from "react";
 import EditTodo from "./EditTodo";
+import "../App.css"
 
 function ListTodo(){
 
@@ -44,16 +45,16 @@ function ListTodo(){
 
     return(
         <Fragment>
-            <div className="container">
-            <table className="table mt-5 text-center">
-    <thead>
-      <tr>
+            <div className="container ListTodo">
+            <table className="table mt-5 text-center tableList">
+    <thead className="thead">
+      <tr className="trTable">
         <th>Description</th>
         <th>Edit</th>
         <th>Delete</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody className="custom-tbody">
     {todos.map((data) => {
     return (
     <tr key={data.id}>
@@ -62,7 +63,7 @@ function ListTodo(){
       <td><button className="btn btn-danger" onClick={() => deleteTodo(data.id)}>Delete</button></td>
     </tr>
   );
-})};
+})}
 
       
       

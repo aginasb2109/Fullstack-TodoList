@@ -23,7 +23,7 @@ function EditTodo(props) {
         }
     }
   return (
-    <Fragment>
+    <Fragment className="Edit">
       
       <button
         type="button"

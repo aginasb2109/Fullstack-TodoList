@@ -28,10 +28,10 @@ function InputTodo(){
     }
     return(
         <Fragment>
-            <div className="container">
-                <h1 className="text-center mt-5">Todo List</h1>
-                <form className="d-flex mt-5" onSubmit={Submitapplication}>
-                    <input type="text" className="form-control" value={description} onChange={addValue}/>
+            <div className="container inputTodo">
+                <h1 className="text-center mt-5">Todo List📃✏️</h1>
+                <form className="formTodo mt-5" onSubmit={Submitapplication}>
+                    <input type="text" className="form-control inputarea" value={description} onChange={addValue} placeholder="Add your Todo......"/>
                     <button type="submit" className="btn btn-success">Add</button>
                 </form>
                 </div>
