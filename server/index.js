@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 
 
 
+dotenv.config();
 
 const app=express();
 const port=3000;
@@ -17,7 +18,6 @@ const db=new pg.Client({
   port: process.env.DB_PORT,
 })
 db.connect();
-dotenv.config();
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
